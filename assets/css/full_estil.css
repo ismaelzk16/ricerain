@@ -1,0 +1,563 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: "Impact";
+  src: url(../assets/fonts/impact.ttf);
+  }
+@font-face {
+  font-family: "Lucida Sans Unicode";
+  src: url(../assets/fonts/lucida.ttf);
+}
+/* FONDO PAGINA */
+.fondo{
+  background: #171717;
+  width: 100%;
+  height: 141rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+  color: white;
+}
+/* BODY */
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding-bottom: auto;
+  box-sizing: border-box;
+}
+/* BODY */
+
+/* NAVIGATION BAR */
+.barramenu {
+    background-color: #171717;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    height: 4.6rem;
+    position:fixed;
+    z-index: 1;
+}
+
+
+.color2{
+  background-color: #D48633;
+}
+
+.color3{
+  background-color: #4F1522;
+}
+
+.logo{
+  width: auto;
+  height: 4.6rem;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.contenedorbotones{
+  height: 4.6rem;
+  width: auto;
+  align-content: flex-end;
+}
+
+.contenedorpaginas{
+  height: 4.6rem;
+  width: 45rem;
+  padding-left: 7%;
+  align-content: space-between;
+}
+
+.buscar{
+  width: 9rem;
+  height: 4.6rem;
+  background-image: url("../images/buscar.png");
+  background-color: #808080;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.buscar:hover{
+  width: 9rem;
+  height: 4.6rem;
+  background-image: url("../images/buscar.png");
+  background-color: #3d3d3d;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carrito{
+  width: 9rem;
+  height: 4.6rem;
+  background-image: url("../images/carrito.png");
+  background-color: #D48633;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-content: right;
+}
+
+.carrito:hover{
+  width: 9rem;
+  height: 4.6rem;
+  background-image: url("../images/carrito.png");
+  background-color: #9e6425;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login{
+  width: 9rem;
+  height: 4.6rem;
+  background-image: url("../images/perfil.png");
+  background-color: #4F1522;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-content: center;
+}
+
+.login:hover{
+  width: 9rem;
+  height: 4.6rem;
+  background-color: #330e16;
+  opacity: 0.6;
+  vertical-align: middle; 
+}
+
+.apetina{
+  margin-top: -1rem;
+  padding-top: 1rem;
+  height: 4.6rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.apetina:hover{
+  margin-top: -1rem;
+  padding-top: 1rem;
+  height: 4.6rem;
+  width: 10rem;
+  background-color: #9e6425;
+  text-align: center;
+}
+
+/* NAVIGATION BAR */
+
+/*CABECERA*/
+.cabecera{
+  width: 100%;
+  height: 35rem;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/homebanner.png");
+  background-size: 100%;
+  z-index: 0;
+}
+
+.cabeceracarta{
+  width: 100%;
+  height: 35rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/cartabanner.jpg");
+  background-size: 100%;
+  z-index: 0;
+}
+
+
+.banner{
+  width: 100%;
+  height: 30rem;
+  align-items: flex-start;
+}
+
+.titulo{
+  margin: auto;
+  padding-top: 7rem;
+  width: auto;
+  height: 16rem;
+  font-size: 800%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.titulopags{
+  margin: auto;
+  padding-top: 13rem;
+  width: auto;
+  height: 16rem;
+  font-size: 800%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.subtitulo{
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  color: #808080;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.pideya{
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-family: 'Lucida Sans Unicode';
+  border-radius: 1rem;
+  background-color: #D48633;
+  color: white;
+  float: left;
+  margin-left: 41%;
+  margin-right: 59%;
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+.pideya:hover{
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-family: 'Lucida Sans Unicode';
+  border-radius: 1rem;
+  background-color: #9e6425;
+  color: white;
+  float: left;
+  margin-left: 41%;
+  margin-right: 59%;
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+/*CABECERA*/
+
+/* FOOTER */
+footer{
+  background: #232323;
+  width: 100%;
+  height: 18rem;
+  color: #808080;
+  text-decoration: none;
+  background-image: url("../images/logo2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  position: absolute
+}
+
+.columnapol{
+  width: 40%;
+  height: 12rem;
+  margin-left: 7rem;
+}
+
+.columnacon{
+  width: 40%;
+  height: auto;
+  text-align: center;
+}
+
+.politicas{
+  text-decoration: none;
+  font-size: 2rem;
+  color: #808080;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: right;
+  padding-right: 20%;
+}
+
+.contacto{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  color: #808080;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.rrssiconos{
+  width: 17rem;
+  height: 2rem;
+  margin-top: 2rem;
+  float: right;
+  margin-left: auto;
+  margin-right: 25%;
+}
+
+.fb{
+  height: 2rem;
+  width: 2rem;
+  margin-top: -2rem;
+  padding-left:  90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/facebook.png");
+}
+
+.ig{
+  height: 2rem;
+  width: 2rem;
+  background-image: url("../images/instagram.png");
+}
+
+.ta{
+  height: 2rem;
+  width: 2rem;
+  margin-top: -1.75rem;
+  padding-left:  180%;
+  background-image: url("../images/tripadvisor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contactocont{
+  width: 30rem;
+  height: 8rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.coniconos{
+  height: 2rem;
+  width: 2rem;
+  background-image: url("../images/alfiler.png");
+  background-size: 1.50rem;
+  background-repeat: no-repeat;
+}
+
+.coniconos2{
+  height: 2rem;
+  width: 2rem;
+  background-image: url("../images/telefono.png");
+  background-size: 1.50rem;
+  background-repeat: no-repeat;
+}
+
+.textocontacto{
+  height: 2rem;
+  width: 20rem;
+  margin-left: 1.3rem;
+  margin-top: -2.2rem;
+  text-align: left;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+}
+/* FOOTER */
+
+/* ============================ HOME ============================ */
+
+.seccion1{
+  width: 100%;
+  height: 37.5rem;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3.5rem;
+  text-shadow:  0.1em 0.1em 0.0em #4F1522;
+  color: white;
+}
+
+.homeentrantes{
+  width: 50%;
+  height: 18.75rem;
+  justify-content: center;
+  padding-top: 6.5rem;
+  background-image: url("../images/homentrantes.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100%;
+}
+
+.homearroces{
+  width: 50%;
+  height: 18.75rem;
+  justify-content: center;
+  padding-top: 6.5rem;
+  background-image: url("../images/homearroz.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 100%;
+}
+
+.homepostres{
+  width: 50%;
+  height: 18.75rem;
+  justify-content: center;
+  padding-top: 6.5rem;
+  background-image: url("../images/homepostres.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100%;
+}
+
+.homebebidas{
+  width: 50%;
+  height: 18.75rem;
+  justify-content: center;
+  padding-top: 6.5rem;
+  background-image: url("../images/homebebidas.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100%;
+}
+
+.reseñas{
+  width: 100%;
+  height: 25rem;
+  text-align: center;
+  background-color: #D48633;
+  opacity: 0.8;
+  color: white;
+}
+
+.titulos{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  justify-content: center;
+  text-align: center;
+  color: #808080;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.rating{
+  color: #D48633;
+}
+
+.textoreseña{
+  margin: auto;
+  padding-top: 2rem;
+  width: 20rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.info{
+  width: 100%;
+  height: 24rem;
+  text-align: center;
+  color: white;
+}
+
+.textoinfo{
+  margin: auto;
+  padding-top: 2rem;
+  width: 34rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+}
+
+.quiensomos{
+  width: 100%;
+  height: 24rem;
+  background-image: url("../images/quiensomos.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  }
+
+/* ============================ HOME ============================ */
+
+
+
+
+
+/* ============================ CARTA ============================ */
+
+.listacarta{
+  width: 100%;
+  height: 100rem;
+  text-align: center;
+  font-family: 'Lucida Sans Unicode';
+  color: white;
+}
+
+.fotoscarta{
+  height: auto;
+}
+
+.entrantefoto{
+  width: 90%;
+  height: 85%;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  background-image: url(../images/cartaentrantes.jpg);
+  background-color: red;
+  background-size: 200%;
+  background-position: 40% 0%;
+  background-repeat: no-repeat;
+}
+
+.tituloscarta{
+  padding-top: 3.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+}
+
+.producto{
+  text-align: left;
+  color: #ADADAD;
+  font-size: 1.2rem;
+}
+
+.botonescarta{
+  margin-top: 4.6rem;
+}
+
+.botonescarta > input{
+  width: 5.5rem;
+  color: white;
+  background-color: #D48633;
+  border-radius: 0.3rem;
+  border: 0;
+  font-family: 'Lucida Sans Unicode';
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+
+.botonescarta > input:hover{
+  width: 5.5rem;
+  color: white;
+  background-color: #4F1522;
+  border-radius: 0.3rem;
+  border: 0;
+  font-family: 'Lucida Sans Unicode';
+  font-weight: 800;
+}
+
+/* ============================ CARTA ============================ */
+
+
+
+
+
+
+/* ============================ CONTACTO ============================ */
+
+
+
+/* ============================ CONTACTO ============================ */
+
+
+
+
+
+
+/* ============================ CARRITO ============================ */
+
+
+
+/* ============================ CARRITO ============================ */
+
