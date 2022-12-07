@@ -1,8 +1,13 @@
 <?php
-require_once("bd/bd.php");
 
-// require("./models/Usuario.php");
-// require("./controllers/usuarios.php");
+session_start();
+
+if (isset($_SESSION['nueva_sesión']) && (time() - $_SESSION['nueva_sesión'] > 1000)) {
+  session_unset(); 
+  session_destroy();
+}else{
+  $_SESSION['nueva_sesión'] = time(); 
+} 
 
 include("./views/header.php");
 
@@ -28,10 +33,10 @@ include("./views/header.php");
     </header>
     <section class="seccion1 col-12 container-fluid ">
         <div class="row">
-            <div class="col-6 container-fluid col-sm-12 col-md-6 homeentrantes">ENTRANTES</div>
-            <div class="col-6 col-sm-12 col-md-6 homearroces">ARROCES Y PAELLAS</div>
-            <div class="col-6 col-sm-12 col-md-6 homepostres">POSTRES</div>
-            <div class="col-6 col-sm-12 col-md-6 homebebidas">BEBIDAS</div>
+            <a href="carta.php#entrant" class="homeentrantes"><div class="col-6 container-fluid col-sm-12 col-md-6">ENTRANTES</div></a>
+            <a href="carta.php#arro" class="homearroces" ><div class="col-6 container-fluid col-sm-12 col-md-6 ">ARROCES</div></a>
+            <a href="carta.php#postr" class="homepostres" ><div class="col-6 container-fluid col-sm-12 col-md-6 ">POSTRES</div></a>
+            <a href="carta.php#bebid" class="homebebidas" ><div class="col-6 container-fluid col-sm-12 col-md-6 ">BEBIDAS</div></a>
             </tr>
         </div>
     </section>

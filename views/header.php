@@ -11,16 +11,20 @@
       <link href="assets/css/full_estil.css" rel="stylesheet" type="text/css" media="screen">
       <meta http-equiv="refresh" content="1000">
   </head>
+
+
   <body>
+
+
   <header>
     <nav class="navbar navbar-expand-lg barramenu">
-    <div class="container-fluid">
-    <div class="logo"><a href="index.php"><img src="assets/images/logo.png" alt="logo ricerain" width="95 rem"></a></div>
-      <div class="row me-5">
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="container-xxl">
+        <div class="logo"><a href="index.php"><img src="assets/images/logo.png" alt="logo ricerain" width="95 rem"></a></div>
+         <div class="row me-5">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <ul class="navbar-nav col-8 col-sm-6 contenedorpaginas pt-3">
           <li class="nav-item apetina">
@@ -38,7 +42,7 @@
           <a class="nav-link active buscar" href="buscar.php"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active carrito" href="carrito.php"></a>
+            <a class="nav-link active carrito" href="carrito.php"><span class="contadorProuctos"><?php echo count($_SESSION['compra']);?></a></span>
           </li>
           <li class="nav-item">
             <a class="nav-link active login" href="login.php"></a>

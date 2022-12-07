@@ -1,8 +1,13 @@
 <?php
-require_once("bd/bd.php");
 
-// require("./models/Usuario.php");
-// require("./controllers/usuarios.php");
+session_start();
+
+if (isset($_SESSION['nueva_sesión']) && (time() - $_SESSION['nueva_sesión'] > 1000)) {
+  session_unset(); 
+  session_destroy();
+}else{
+  $_SESSION['nueva_sesión'] = time(); 
+} 
 
 include("./views/header.php");
 
